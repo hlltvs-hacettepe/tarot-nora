@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import axios from 'axios';
 
-function CardDetail({ selectedCard }) {
+function CardDetail({ selectedCard,cardPage }) {
 
 
 
@@ -20,7 +20,7 @@ function CardDetail({ selectedCard }) {
         }}>
         <Typography>Dashboard content for {selectedCard}</Typography>
             <iframe
-                src="https://www.tarotika.com/deli-tarot" // Buraya açmak istediğiniz URL'yi koyun
+                src={cardPage} // Buraya açmak istediğiniz URL'yi koyun
                 style={{ width: '100%', height: '100%', border: 'none' }}
                 title="Mini Web View"
             />
